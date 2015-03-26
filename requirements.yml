@@ -1,0 +1,6 @@
+- src: mstrisoline.ruby-builder
+  path: roles/
+
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/common.git
+  path: roles/
+  name: common
