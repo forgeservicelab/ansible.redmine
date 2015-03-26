@@ -11,11 +11,8 @@
       web_domain: support-devel.forgeservicelab.fi
       sudo: true
 
-    - role:  mstrisoline.ruby-builder
-      ruby_builder_ruby_version: '1.9.3-p547'
-      sudo: true
-
     - role: redmine
+      ruby_builder_ruby_version: '1.9.3-p547'
       redmine_dir: /opt/redmine
       redmine_db_name: redmine_development
       redmine_db_host: dbserver.forgeservicelab.fi
