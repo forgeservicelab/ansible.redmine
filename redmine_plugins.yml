@@ -1,72 +1,59 @@
 ---
-
 redmine_plugins:
   - name: redmine_statistics
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_statistics.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_pdf_macro
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_pdf_macro.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_rubycas
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_rubycas.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_my_page_queries
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_my_page_queries.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_wiki_extensions
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_wiki_extensions.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_impasse
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_impasse.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_canned_responses
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_canned_responses.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_email_notification_content_filter
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_email_notification_content_filter.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_watcher_groups
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_watcher_groups.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_ldap_sync
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_ldap_sync.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
-  - name: redmine_anonymous_watchers
-    repo: 
-    dest: "{{ redmine_dir }}/plugins"
-    version:
+  # - name: redmine_anonymous_watchers
+  #   repo:
+  #   dest: "{{ redmine_dir }}/plugins"
+  #   version:
 
-  - name: redmine_redcarpet_formatter
-    repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_redcarpet_formatter.git
-    dest: "{{ redmine_dir }}/plugins"
-    version:
+  # - name: redmine_redcarpet_formatter
+  #   repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_redcarpet_formatter.git
+  #   dest: "{{ redmine_dir }}/plugins"
 
   - name: redmine_extended_watchers
     repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_extended_watchers.git
     dest: "{{ redmine_dir }}/plugins"
-    version:
 
   - name: redmine_backlogs
-    repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_backlogs.git
+    repo: https://github.com/JohnBat26/redmine_backlogs.git
+    # repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_redmine-plugins/redmine_backlogs.git
     dest: "{{ redmine_dir }}/plugins"
-    version:

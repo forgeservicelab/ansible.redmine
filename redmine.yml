@@ -17,12 +17,19 @@
       web_domain: support-devel.forgeservicelab.fi
       sudo: true
 
+    - role: forge_ssl
+      sudo: true
+
     - role: redmine
       ruby_builder_ruby_version: '2.2.1'
+      redmine_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge/redmine.git
+      redmine_version: tag-3.0.1-branchoff
       redmine_dir: /opt/redmine
       redmine_db_name: redmine_development
       redmine_db_host: dbserver.forgeservicelab.fi
       redmine_db_user: redmine
       redmine_db_pass: voTSC7bsKARFJEG
       # redmine_plugin_file: redmine_plugins.yml
+      ssl_cert_location: "{{ forge_ssl_cert_wholechain }}"
+      ssl_key_location: "{{ forge_ssl_key }}"
       sudo: true
