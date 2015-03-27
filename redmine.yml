@@ -12,6 +12,13 @@
         update_cache: yes
       sudo: true
 
+    - name: Get a newer git
+      apt:
+        name: git
+        default_release: wheezy-backports
+        state: latest
+      sudo: true
+
   roles:
     - role: common
       web_domain: support-devel.forgeservicelab.fi
