@@ -36,7 +36,39 @@
       redmine_db_host: dbserver.forgeservicelab.fi
       redmine_db_user: redmine
       redmine_db_pass: voTSC7bsKARFJEG
-      # redmine_plugin_file: redmine_plugins.yml
       ssl_cert_location: "{{ forge_ssl_cert_wholechain }}"
       ssl_key_location: "{{ forge_ssl_key }}"
       sudo: true
+
+    - role: generic_install
+      redmine_dir: /opt/redmine
+      plugin_name: redmine_cas
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_cas.git
+      sudo: true
+
+    - role: generic_install
+      redmine_dir: /opt/redmine
+      plugin_name: redmine_ldap_sync
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_ldap_sync.git
+      sudo: true
+
+    # - role: redmine_backlogs
+    #   redmine_dir: /opt/redmine
+    #   plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_backlogs.git
+
+  post_tasks:
+    - name: Set cron job to receive email
+      sudo: true
+      cron:
+        name: Get email from GMail
+        minute: '*/5'
+        user: redmine
+        job: cd /var/www/redmine/redmine-2.2.4 && rake -f /var/www/redmine/redmine-2.2.4/Rakefile redmine:email:receive_imap RAILS_ENV="production"  host=imap.gmail.com username=support@forgeservicelab.fi ssl=yes port=993 password=Tummapall0h project=forge-support tracker=Support allow_override=tracker,project,priority,assigned_to
+
+    - name: Set cron job to synchronize LDAP
+      sudo: true
+      cron:
+        name: Syncrhonize LDAP users and groups
+        minute: '*/10'
+        user: redmine
+        job: cd /var/www/redmine/redmine-2.2.4 && RAILS_ENV=production rake redmine:plugins:ldap_sync:sync_all

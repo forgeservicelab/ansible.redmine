@@ -1,7 +1,7 @@
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/common.git
   path: roles/
   name: common
-  
+
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/forge_ssl.git
   path: roles/
   name: forge_ssl
@@ -9,3 +9,11 @@
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/redmine.git
   path: roles/
   name: redmine
+
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/redmine-plugins-ansible-modules/redmine_backlogs.git
+  path: roles/
+  name: redmine_backlogs
+
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/redmine-plugins-ansible-modules/generic_install.git
+  path: roles/
+  name: generic_install
