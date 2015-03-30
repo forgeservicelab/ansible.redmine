@@ -28,9 +28,9 @@
       sudo: true
 
     - role: redmine
-      ruby_builder_ruby_version: '2.2.1'
+      ruby_builder_ruby_version: '2.1.5'
       redmine_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge/redmine.git
-      redmine_version: tag-3.0.1-branchoff
+      redmine_version: tag-2.6.3-branchoff
       redmine_dir: /opt/redmine
       redmine_db_name: redmine_development
       redmine_db_host: dbserver.forgeservicelab.fi
