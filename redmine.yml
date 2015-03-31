@@ -30,7 +30,7 @@
     - role: redmine
       ruby_builder_ruby_version: '2.1.5'
       redmine_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge/redmine.git
-      redmine_version: tag-2.6.3-branchoff
+      redmine_version: forge
       redmine_dir: /opt/redmine
       redmine_db_name: redmine_development
       redmine_db_host: dbserver.forgeservicelab.fi
