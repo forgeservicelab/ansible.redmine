@@ -10,10 +10,14 @@
   path: roles/
   name: redmine
 
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/redmine-plugins-ansible-modules/generic_install.git
+  path: roles/
+  name: generic_install
+
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/redmine-plugins-ansible-modules/redmine_backlogs.git
   path: roles/
   name: redmine_backlogs
 
-- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/redmine-plugins-ansible-modules/generic_install.git
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/redmine-plugins-ansible-modules/redmine_my_page_queries.git
   path: roles/
-  name: generic_install
+  name: redmine_my_page_queries
