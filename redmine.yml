@@ -1,11 +1,5 @@
 ---
-- hosts: localhost
-  gather_facts: no
-  connection: local
-  tasks:
-    - include: pre_play.yml
-
-- hosts: "{{ target_group }}"
+- hosts: "{{ target }}"
   pre_tasks:
     - apt:
         name: libffi-dev
@@ -21,7 +15,6 @@
 
   roles:
     - role: common
-      web_domain: support-devel.forgeservicelab.fi
       sudo: true
 
     - role: forge_ssl
@@ -32,10 +25,10 @@
       redmine_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge/redmine.git
       redmine_version: forge
       redmine_dir: /opt/redmine
-      redmine_db_name: redmine_development
-      redmine_db_host: dbserver.forgeservicelab.fi
-      redmine_db_user: redmine
-      redmine_db_pass: voTSC7bsKARFJEG
+      redmine_db_name: "{{ db_name }}"
+      redmine_db_host: "{{ db_host }}"
+      redmine_db_user: "{{ db_user }}"
+      redmine_db_pass: "{{ db_pass }}"
       ssl_cert_location: "{{ forge_ssl_cert_wholechain }}"
       ssl_key_location: "{{ forge_ssl_key }}"
       sudo: true
