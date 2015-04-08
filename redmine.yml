@@ -34,6 +34,13 @@
       sudo: true
       tags: core
 
+    - role: redmine_my_page_queries
+      redmine_dir: /opt/redmine
+      plugin_name: redmine_my_page_queries
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_my_page_queries.git
+      sudo: true
+      tags: plugin
+
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_pdf_macro
@@ -89,13 +96,6 @@
       plugin_name: redmine_anonymous_watchers
       plugin_version: forge
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_anonymous_watchers.git
-      sudo: true
-      tags: plugin
-
-    - role: redmine_my_page_queries
-      redmine_dir: /opt/redmine
-      plugin_name: redmine_my_page_queries
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_my_page_queries.git
       sudo: true
       tags: plugin
 
