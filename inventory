@@ -1,5 +1,5 @@
 [production_nodes]
-production ansible_ssh_host support.forgeservicelab.fi
+production ansible_ssh_host=support.forgeservicelab.fi
 
 [testing_nodes]
-testing ansible_ssh_host support-test.forgeservicelab.fi
+testing ansible_ssh_host=support-test.forgeservicelab.fi
