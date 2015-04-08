@@ -21,3 +21,7 @@
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/redmine-plugins-ansible-modules/redmine_my_page_queries.git
   path: roles/
   name: redmine_my_page_queries
+
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/openfire.git
+  path: roles/
+  name: openfire

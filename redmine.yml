@@ -113,6 +113,10 @@
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_watcher_groups.git
       sudo: true
 
+    - role: openfire
+      new_install: false
+      sudo: true
+
   post_tasks:
     - name: Set cron job to receive email
       sudo: true
