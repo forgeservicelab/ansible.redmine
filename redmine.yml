@@ -39,42 +39,54 @@
       plugin_name: redmine_my_page_queries
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_my_page_queries.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - my_page_queries
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_pdf_macro
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_pdf_macro.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - pdf_macro
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_statistics
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_statistics.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - statistics
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_cas
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_cas.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - cas
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_ldap_sync
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_ldap_sync.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - ldap_sync
 
     - role: redmine_backlogs
       redmine_dir: /opt/redmine
       plugin_name: redmine_backlogs
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_backlogs.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - backlogs
 
     - role: generic_install
       redmine_dir: /opt/redmine
@@ -82,14 +94,18 @@
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_wiki_extensions.git
       plugin_version: forge
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - wiki_extensions
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_email_notification_content_filter
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_email_notification_content_filter.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - email_notification_content_filter
 
     - role: generic_install
       redmine_dir: /opt/redmine
@@ -97,35 +113,45 @@
       plugin_version: forge
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_anonymous_watchers.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - anonymous_watchers
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_impasse
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_impasse.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - impasse
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_canned_responses
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_canned_responses.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - canned_responses
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_extended_watchers
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_extended_watchers.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - extended_watchers
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_watcher_groups
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_watcher_groups.git
       sudo: true
-      tags: plugin
+      tags:
+        - plugin
+        - watcher_groups
 
     - role: openfire
       new_install: false
