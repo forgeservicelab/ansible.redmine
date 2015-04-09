@@ -43,6 +43,15 @@
         - plugin
         - my_page_queries
 
+    - role: redmine_backlogs
+      redmine_dir: /opt/redmine
+      plugin_name: redmine_backlogs
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_backlogs.git
+      sudo: true
+      tags:
+        - plugin
+        - backlogs        
+
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_pdf_macro
@@ -78,15 +87,6 @@
       tags:
         - plugin
         - ldap_sync
-
-    - role: redmine_backlogs
-      redmine_dir: /opt/redmine
-      plugin_name: redmine_backlogs
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_backlogs.git
-      sudo: true
-      tags:
-        - plugin
-        - backlogs
 
     - role: generic_install
       redmine_dir: /opt/redmine
