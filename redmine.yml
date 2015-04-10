@@ -37,7 +37,7 @@
     - role: redmine_my_page_queries
       redmine_dir: /opt/redmine
       plugin_name: redmine_my_page_queries
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_my_page_queries.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_my_page_queries.git
       sudo: true
       tags:
         - plugin
@@ -46,16 +46,16 @@
     - role: redmine_backlogs
       redmine_dir: /opt/redmine
       plugin_name: redmine_backlogs
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_backlogs.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_backlogs.git
       sudo: true
       tags:
         - plugin
-        - backlogs        
+        - backlogs
 
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_pdf_macro
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_pdf_macro.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_pdf_macro.git
       sudo: true
       tags:
         - plugin
@@ -64,7 +64,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_statistics
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_statistics.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_statistics.git
       sudo: true
       tags:
         - plugin
@@ -73,7 +73,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_cas
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_cas.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_cas.git
       sudo: true
       tags:
         - plugin
@@ -82,7 +82,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_ldap_sync
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_ldap_sync.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_ldap_sync.git
       sudo: true
       tags:
         - plugin
@@ -91,7 +91,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_wiki_extensions
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_wiki_extensions.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_wiki_extensions.git
       plugin_version: forge
       sudo: true
       tags:
@@ -101,7 +101,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_email_notification_content_filter
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_email_notification_content_filter.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_email_notification_content_filter.git
       sudo: true
       tags:
         - plugin
@@ -111,7 +111,7 @@
       redmine_dir: /opt/redmine
       plugin_name: redmine_anonymous_watchers
       plugin_version: forge
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_anonymous_watchers.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_anonymous_watchers.git
       sudo: true
       tags:
         - plugin
@@ -120,7 +120,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_impasse
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_impasse.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_impasse.git
       sudo: true
       tags:
         - plugin
@@ -129,7 +129,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_canned_responses
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_canned_responses.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_canned_responses.git
       sudo: true
       tags:
         - plugin
@@ -138,7 +138,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_extended_watchers
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_extended_watchers.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_extended_watchers.git
       sudo: true
       tags:
         - plugin
@@ -147,7 +147,7 @@
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_watcher_groups
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge_new-redmine-plugins/redmine_watcher_groups.git
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_watcher_groups.git
       sudo: true
       tags:
         - plugin
