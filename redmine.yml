@@ -154,11 +154,11 @@
         - watcher_groups
 
     - role: forge_error_pages
-      target_webserver: apache
+      target_webserver: nginx
       sudo: true
       tags:
         - error_pages
-        
+
     - role: openfire
       new_install: false
       sudo: true
