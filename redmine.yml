@@ -165,6 +165,13 @@
       tags: xmpp
 
   post_tasks:
+    - name: link the custom error pages on nginx
+      replace:
+        dest: /etc/nginx/sites-available/redmine
+        regexp: ^(\s+)error_page 502.*
+        replace: \1location /errors/ {\n\1\1root  /var/www/errors;\n\1\1internal;\n\1}
+        backup: yes
+        
     - name: Set cron job to receive email
       sudo: true
       cron:
