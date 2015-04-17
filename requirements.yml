@@ -25,3 +25,7 @@
 - src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/openfire.git
   path: roles/
   name: openfire
+
+- src: git+ssh://gitlab@git.forgeservicelab.fi:10022/ansible-roles/forge-error-pages.git
+  path: roles/
+  name: forge_error_pages
