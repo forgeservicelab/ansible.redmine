@@ -52,6 +52,16 @@
         - plugin
         - backlogs
 
+    - role: redmine_improved_searchbox
+      redmine_dir: /opt/redmine
+      plugin_name: redmine_backlogs
+      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_improved_searchbox.git
+      plugin_version: forge
+      sudo: true
+      tags:
+        - plugin
+        - improved_searchbox
+
     - role: generic_install
       redmine_dir: /opt/redmine
       plugin_name: redmine_pdf_macro
