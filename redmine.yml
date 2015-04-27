@@ -110,25 +110,6 @@
 
     - role: generic_install
       redmine_dir: /opt/redmine
-      plugin_name: redmine_email_notification_content_filter
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_email_notification_content_filter.git
-      sudo: true
-      tags:
-        - plugin
-        - email_notification_content_filter
-
-    - role: generic_install
-      redmine_dir: /opt/redmine
-      plugin_name: redmine_anonymous_watchers
-      plugin_version: forge
-      plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_anonymous_watchers.git
-      sudo: true
-      tags:
-        - plugin
-        - anonymous_watchers
-
-    - role: generic_install
-      redmine_dir: /opt/redmine
       plugin_name: redmine_impasse
       plugin_repo: ssh://gitlab@git.forgeservicelab.fi:10022/forge-redmine-plugins/redmine_impasse.git
       sudo: true
