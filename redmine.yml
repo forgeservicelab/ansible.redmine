@@ -29,6 +29,9 @@
       redmine_db_host: "{{ db_host }}"
       redmine_db_user: "{{ db_user }}"
       redmine_db_pass: "{{ db_pass }}"
+      mandrillapp_domain: "{{ mandrill_domain }}"
+      mandrillapp_username: "{{ mandrill_user }}"
+      mandrillapp_password: "{{ mandrill_pass }}"
       ssl_cert_location: "{{ forge_ssl_cert_wholechain }}"
       ssl_key_location: "{{ forge_ssl_key }}"
       sudo: true
