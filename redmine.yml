@@ -165,7 +165,7 @@
         name: Get email from GMail
         minute: '*/5'
         user: redmine
-        job: cd /var/www/redmine/redmine-2.2.4 && rake -f /var/www/redmine/redmine-2.2.4/Rakefile redmine:email:receive_imap RAILS_ENV="production"  host=imap.gmail.com username=support@forgeservicelab.fi ssl=yes port=993 password=Tummapall0h project=forge-support tracker=Support allow_override=tracker,project,priority,assigned_to
+        job: "cd {{ redmine_dir }} && bundle exec rake redmine:email:receive_imap RAILS_ENV=production host=imap.gmail.com username=support@forgeservicelab.fi ssl=yes port=993 password=Tummapall0h project=forge-support tracker=Support allow_override=tracker,project,priority,assigned_to"
 
     - name: Set cron job to synchronize LDAP
       sudo: true
@@ -173,4 +173,4 @@
         name: Syncrhonize LDAP users and groups
         minute: '*/10'
         user: redmine
-        job: cd /var/www/redmine/redmine-2.2.4 && RAILS_ENV=production rake redmine:plugins:ldap_sync:sync_all
+        job: "cd {{ redmine_dir }} && RAILS_ENV=production bundle exec rake redmine:plugins:ldap_sync:sync_all"
