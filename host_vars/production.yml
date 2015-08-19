@@ -1,0 +1,10 @@
+---
+web_domain: support.forgeservicelab.fi
+db_name: redmine_production
+db_host: dbserver.forgeservicelab.fi
+db_user: redmine
+db_pass: <REDMINE DB PASSWORD>
+openfire_database: xmpp_production
+mandrill_domain: forgeservicelab.fi
+mandrill_user: support@forgeservicelab.fi
+mandrill_pass: <MANDRILL PASSWORD>
